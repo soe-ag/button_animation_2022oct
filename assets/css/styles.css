@@ -1,0 +1,1410 @@
+.testarea {
+  background-color: aquamarine;
+  max-width: 1170px;
+  padding: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  background-color: #fff;
+  width: 176px;
+  border: 1px solid #555;
+}
+
+.btn:hover span {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #fff;
+}
+
+.btn span {
+  position: relative;
+  z-index: 5;
+  color: #333;
+}
+
+.bgleft_right:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.bgleft_right:hover:before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgleft_left:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.bgleft_left:hover:before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgright_left:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.bgright_left:hover:before {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgright_right:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.bgright_right:hover:before {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgtop_bot:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.bgtop_bot:hover:before {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgtop_top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.bgtop_top:hover:before {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgbot_top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.bgbot_top:hover:before {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgbot_bot:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.bgbot_bot:hover:before {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgcenter_edge:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.bgcenter_edge:hover:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgcenter_edge2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.bgcenter_edge2:hover:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgcenter_edge3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.bgcenter_edge3:hover:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgskew:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -115%;
+  background-color: #333;
+  width: 110%;
+  height: 100%;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+}
+
+.bgskew:hover:before {
+  -webkit-animation: skewanimate 0.5s forwards;
+          animation: skewanimate 0.5s forwards;
+}
+
+@-webkit-keyframes skewanimate {
+  100% {
+    left: -5%;
+  }
+}
+
+@keyframes skewanimate {
+  100% {
+    left: -5%;
+  }
+}
+
+.bgleft_dia:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+
+.bgleft_dia:hover:before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgleft_dia2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.bgleft_dia2:hover:before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgright_dia:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+
+.bgright_dia:hover:before {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.bgright_dia2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.4s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.bgright_dia2:hover:before {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.btn2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 237px;
+  height: 44px;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.btn2 span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  line-height: 44px;
+  top: 0;
+  border: 1px solid #333;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.rotatefront span:nth-child(1) {
+  background-color: #fff;
+  color: #333;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transform-origin: 0 50% -23px;
+          transform-origin: 0 50% -23px;
+}
+
+.rotatefront:hover span:nth-child(1) {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.rotatefront span:nth-child(2) {
+  background: #000;
+  color: #fff;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transform-origin: 0 50% -23px;
+          transform-origin: 0 50% -23px;
+}
+
+.rotatefront:hover span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.rotateback span:nth-child(1) {
+  background-color: #fff;
+  color: #333;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transform-origin: 0 50% -22px;
+          transform-origin: 0 50% -22px;
+}
+
+.rotateback:hover span:nth-child(1) {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+.rotateback span:nth-child(2) {
+  background: #000;
+  color: #fff;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+  -webkit-transform-origin: 0 50% -22px;
+          transform-origin: 0 50% -22px;
+}
+
+.rotateback:hover span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.rotateleft span:nth-child(1) {
+  background-color: #fff;
+  color: #333;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-origin: 50% 0 -118px;
+          transform-origin: 50% 0 -118px;
+}
+
+.rotateleft:hover span:nth-child(1) {
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+}
+
+.rotateleft span:nth-child(2) {
+  background: #000;
+  color: #fff;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-transform-origin: 50% 0 -118px;
+          transform-origin: 50% 0 -118px;
+}
+
+.rotateleft:hover span:nth-child(2) {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.rotateright span:nth-child(1) {
+  background-color: #fff;
+  color: #333;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-origin: 50% 0 -118px;
+          transform-origin: 50% 0 -118px;
+}
+
+.rotateright:hover span:nth-child(1) {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.rotateright span:nth-child(2) {
+  background: #000;
+  color: #fff;
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+  -webkit-transform-origin: 50% 0 -118px;
+          transform-origin: 50% 0 -118px;
+}
+
+.rotateright:hover span:nth-child(2) {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.float1 {
+  color: #333;
+}
+
+.float1:hover {
+  -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+  color: brown;
+}
+
+.float2 {
+  color: #333;
+}
+
+.float2:hover {
+  top: -5px;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.linestretch1 {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  width: 176px;
+  color: #333;
+}
+
+.linestretch1:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: solid #333;
+  border-width: 2px 0 0 2px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.linestretch1:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.linestretch1:hover:before, .linestretch1:hover:after {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border-color: #666;
+}
+
+.linestretch2 {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  width: 167px;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.linestretch2:before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  border: solid #333;
+  border-width: 1px 0 0 1px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.linestretch2:after {
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 1px 1px 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.linestretch2:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.linestretch2:hover:before, .linestretch2:hover:after {
+  width: calc(100% + 11px);
+  height: calc(100% + 11px);
+  border-color: #666;
+}
+
+.linestretch3 {
+  position: relative;
+  display: block;
+  color: #333;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  width: 176px;
+}
+
+.linestretch3:hover {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+  background-color: #333;
+  color: #fff;
+}
+
+.linestretch3:hover span:before,
+.linestretch3:hover span:after {
+  height: 100%;
+}
+
+.linestretch3:hover::before, .linestretch3:hover::after {
+  width: 100%;
+}
+
+.linestretch3::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  left: 0;
+  bottom: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.linestretch3::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  right: 0;
+  top: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.linestretch3 span {
+  display: block;
+}
+
+.linestretch3 span::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  left: 0;
+  top: 0;
+}
+
+.linestretch3 span:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  right: 0;
+  bottom: 0;
+}
+
+.linestretch4 {
+  position: relative;
+  display: block;
+  color: #333;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+  width: 176px;
+}
+
+.linestretch4:hover {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+  background-color: #333;
+  color: #fff;
+}
+
+.linestretch4:hover span:before,
+.linestretch4:hover span:after {
+  height: 100%;
+}
+
+.linestretch4:hover::before, .linestretch4:hover::after {
+  width: 100%;
+}
+
+.linestretch4::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  right: 0;
+  top: 0;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.linestretch4::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  left: 0;
+  bottom: 0;
+}
+
+.linestretch4 span {
+  display: block;
+}
+
+.linestretch4 span::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  left: 0;
+  top: 0;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.linestretch4 span:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.linestretch5 {
+  position: relative;
+  display: block;
+  color: #333;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  width: 176px;
+}
+
+.linestretch5:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.linestretch5:hover span:before,
+.linestretch5:hover span:after {
+  height: 100%;
+}
+
+.linestretch5:hover::before, .linestretch5:hover::after {
+  width: 100%;
+}
+
+.linestretch5::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  right: 0;
+  bottom: 0;
+}
+
+.linestretch5::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  left: 0;
+  top: 0;
+}
+
+.linestretch5 span {
+  display: block;
+}
+
+.linestretch5 span::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  left: 0;
+  top: 0;
+}
+
+.linestretch5 span:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  right: 0;
+  bottom: 0;
+}
+
+.linestretch6 {
+  position: relative;
+  display: block;
+  color: #333;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  width: 176px;
+}
+
+.linestretch6:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.linestretch6:hover span:before,
+.linestretch6:hover span:after {
+  height: 100%;
+}
+
+.linestretch6:hover::before, .linestretch6:hover::after {
+  width: 100%;
+}
+
+.linestretch6::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  right: 0;
+  bottom: 0;
+}
+
+.linestretch6::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  left: 0;
+  top: 0;
+}
+
+.linestretch6 span {
+  display: block;
+}
+
+.linestretch6 span::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  left: 0;
+  bottom: 0;
+}
+
+.linestretch6 span:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  right: 0;
+  top: 0;
+}
+
+.btn3 {
+  position: relative;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  color: #333;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.btn3 span {
+  position: relative;
+  display: block;
+  z-index: 5;
+}
+
+.btn3:hover {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+  color: white;
+}
+
+.bgtop_top2lines span::before,
+.bgtop_top2lines span::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background: #333;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.bgtop_top2lines span::before {
+  left: -30px;
+  top: -9px;
+}
+
+.bgtop_top2lines span::after {
+  right: -30px;
+  top: -9px;
+}
+
+.bgtop_top2lines:hover span::before,
+.bgtop_top2lines:hover span::after {
+  height: 175%;
+}
+
+.bgtop_top2lines::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 0;
+  background: #333;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.bgtop_top2lines:hover::before {
+  height: 100%;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.linestretch7 {
+  position: relative;
+  display: block;
+  color: #333;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+  width: 176px;
+}
+
+.linestretch7:hover::before {
+  -webkit-animation: loop 0.2s linear infinite;
+          animation: loop 0.2s linear infinite;
+  display: block;
+}
+
+@-webkit-keyframes loop {
+  0% {
+    left: -5px;
+    bottom: -5px;
+    background-color: yellow;
+  }
+  35% {
+    left: 231px;
+    bottom: -5px;
+    background-color: green;
+  }
+  50% {
+    left: 231px;
+    bottom: 39px;
+    background-color: red;
+  }
+  85% {
+    left: -5px;
+    bottom: 39px;
+    background-color: blue;
+  }
+  100% {
+    left: -5px;
+    bottom: 0px;
+    background-color: white;
+  }
+}
+
+@keyframes loop {
+  0% {
+    left: -5px;
+    bottom: -5px;
+    background-color: yellow;
+  }
+  35% {
+    left: 231px;
+    bottom: -5px;
+    background-color: green;
+  }
+  50% {
+    left: 231px;
+    bottom: 39px;
+    background-color: red;
+  }
+  85% {
+    left: -5px;
+    bottom: 39px;
+    background-color: blue;
+  }
+  100% {
+    left: -5px;
+    bottom: 0px;
+    background-color: white;
+  }
+}
+
+.linestretch7::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  left: -5px;
+  bottom: -5px;
+  display: none;
+}
+
+.rectangle {
+  overflow: visible !important;
+}
+
+.rectangle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  border: 1px solid white;
+  background-color: black;
+  width: 253px;
+  height: 30px;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.rectangle:hover:before {
+  opacity: 1;
+}
+
+.rectangle:hover {
+  border: 1px solid white;
+  background-color: black;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.arrow:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -92%;
+  top: 0;
+  width: 100%;
+  height: 21.5px;
+  -webkit-transform: skewX(60deg);
+          transform: skewX(60deg);
+  background-color: #333;
+  z-index: 2;
+}
+
+.arrow:hover:before {
+  -webkit-animation: skewanimate2 0.5s forwards;
+          animation: skewanimate2 0.5s forwards;
+}
+
+@-webkit-keyframes skewanimate2 {
+  100% {
+    left: -8%;
+  }
+}
+
+@keyframes skewanimate2 {
+  100% {
+    left: -8%;
+  }
+}
+
+.arrow:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -92%;
+  bottom: 0;
+  width: 100%;
+  height: 22px;
+  -webkit-transform: skewX(-60deg);
+          transform: skewX(-60deg);
+  background-color: #333;
+  z-index: 2;
+}
+
+.arrow:hover:after {
+  -webkit-animation: skewanimate2 0.5s forwards;
+          animation: skewanimate2 0.5s forwards;
+}
+
+@keyframes skewanimate2 {
+  100% {
+    left: -8%;
+  }
+}
+
+.arrow2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -92%;
+  top: 0;
+  width: 81.7%;
+  height: 21.5px;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  background-color: #333;
+}
+
+.arrow2:hover:before {
+  -webkit-animation: skewanimate3 0.5s forwards;
+          animation: skewanimate3 0.5s forwards;
+}
+
+@-webkit-keyframes skewanimate3 {
+  100% {
+    left: 5%;
+  }
+}
+
+@keyframes skewanimate3 {
+  100% {
+    left: 5%;
+  }
+}
+
+.arrow2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -92%;
+  bottom: 0;
+  width: 81.7%;
+  height: 22px;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  background-color: #333;
+}
+
+.arrow2:hover:after {
+  -webkit-animation: skewanimate4 0.5s forwards;
+          animation: skewanimate4 0.5s forwards;
+}
+
+@-webkit-keyframes skewanimate4 {
+  100% {
+    right: 4%;
+  }
+}
+
+@keyframes skewanimate4 {
+  100% {
+    right: 4%;
+  }
+}
+
+.arrow2:hover {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.pattern:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(to right, black, black 5%, transparent 5%, transparent 10%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.pattern:hover:before {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.pattern:after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(to left, black, black 5%, transparent 5%, transparent 10%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.pattern:hover:after {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
